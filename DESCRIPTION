@@ -5,8 +5,12 @@ Authors@R: person('Gabryel', 'Garcia', email = 'gabryelgarcia@id.uff.br', role =
 Description: Dados fnp -> Estrutura golem
 License: MIT + file LICENSE
 Imports: 
+    attempt,
     config (>= 0.3.1),
+    DT,
+    glue,
     golem (>= 0.3.1),
+    htmltools,
     shiny (>= 1.6.0)
 Encoding: UTF-8
 LazyData: true
