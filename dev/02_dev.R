@@ -16,11 +16,24 @@
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
 usethis::use_package( "thinkr" )
+usethis::use_package( "dplyr" )
+usethis::use_package( "shinyWidgets" )
+usethis::use_package( "gt" )
+usethis::use_package( "lubridate" )
+usethis::use_package( "readxl" )
+usethis::use_package( "janitor" )
+usethis::use_package( "stringr" )
+usethis::use_package( "writexl" )
+usethis::use_pipe()
+
+devtools::document() # Atualiza as bibliotecas do NAMESPACE
+devtools::load_all() # Carrega todas as bibliotecas do NAMESPACE 
 
 ## Add modules ----
 ## Create a module infrastructure in R/
 golem::add_module( name = "name_of_module1" ) # Name of the module
-golem::add_module( name = "name_of_module2" ) # Name of the module
+golem::add_module( name = "Teste" ) # Name of the module
+golem::add_module( name = "Estrutura" ) # Name of the module
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
@@ -36,6 +49,7 @@ golem::add_css_file( "custom" )
 ## Add internal datasets ----
 ## If you have data in your package
 usethis::use_data_raw( name = "my_dataset", open = FALSE ) 
+# usethis::use_data_raw( name = "big_epa_cars", open = FALSE ) # Change "my_dataset"
 
 ## Tests ----
 ## Add one line by test you want to create
