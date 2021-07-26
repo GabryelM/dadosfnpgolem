@@ -24,7 +24,6 @@ usethis::use_package( "readxl" )
 usethis::use_package( "janitor" )
 usethis::use_package( "stringr" )
 usethis::use_package( "writexl" )
-usethis::use_pipe()
 
 devtools::document() # Atualiza as bibliotecas do NAMESPACE
 devtools::load_all() # Carrega todas as bibliotecas do NAMESPACE 
@@ -32,8 +31,8 @@ devtools::load_all() # Carrega todas as bibliotecas do NAMESPACE
 ## Add modules ----
 ## Create a module infrastructure in R/
 golem::add_module( name = "name_of_module1" ) # Name of the module
-golem::add_module( name = "Teste" ) # Name of the module
-golem::add_module( name = "Estrutura" ) # Name of the module
+golem::add_module( name = "variacao_no_preco_da_terra" ) # Name of the module
+golem::add_module( name = "componentes_da_variacao_por_usina" ) # Name of the module
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*

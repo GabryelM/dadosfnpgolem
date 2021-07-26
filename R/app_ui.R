@@ -11,11 +11,13 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic 
     fluidPage(
-      h1("dadosfnpgolem"),
-      
-      
+      h1("Custos da Terra"),
+      tabsetPanel(
+        mod_variacao_no_preco_da_terra_ui("variacao_no_preco_da_terra_ui_1"),
+        mod_componentes_da_variacao_por_usina_ui("componentes_da_variacao_por_usina_ui_1")
+        )
+      )
     )
-  )
 }
 
 #' Add external Resources to the Application
